@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Recycling Locations</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <script type="text/javascript" th:src="@{js/javascript.js}"></script>
+</head>
+
+<body>
+
+<!-- The slide-out panel for showing place details -->
+<h1 class="center">Below you'll find all the recycling locations near your current location!</h1>
+<h4 class="center">What's used? HTML, CSS, JavaScript, Google Maps JavaScript API & Google Places API </h4>
+<h5 class="center">(Please allow location permission when prompted in browser, otherwise the location will default to the
+  "Crystal Bridges Museum of American Art". When locations have loaded you may click on a location for more details.)</h5>
+
+<div id="panel"></div> <!--side panel will load here -->
+
+<div id="map"></div> <!--map will load here -->
+
+<h5 class="center">Created by Ramy Gatie. Check out my Github repo on this project <a href="https://www.w3schools.com/">here.</a></h5>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaI4hi5nwn27I4W5K2Af431qD4FRBYorw&libraries=places&callback=initMap">
+</script>
+</body>
+
+</html>
