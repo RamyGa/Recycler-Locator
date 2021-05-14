@@ -1,6 +1,7 @@
 FROM openjdk:11
-ADD target/locations-google-api-0.0.1-SNAPSHOT.jar locations-google-api-0.0.1-SNAPSHOT.jar
-EXPOSE 1144
-ENTRYPOINT ["java", "-jar", "target/locations-google-api-0.0.1-SNAPSHOT.jar"]
+VOLUME /tmp
+ARG JAR_FILE
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
 
 
