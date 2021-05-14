@@ -1,7 +1,7 @@
 FROM openjdk:11
 VOLUME /tmp
 ARG JAR_FILE
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+ADD ${JAR_FILE} locations.google.api.jar
+ENTRYPOINT ["java","-jar","/locations.google.api.jar"]
 
 
